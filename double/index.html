@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sportify Gear</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, purple, blue);
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.1);
+  }
+  .header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  .content {
+    padding: 20px;
+  }
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.1);
+  }
+  .product-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  .form-section {
+    margin-top: 20px;
+  }
+  label, input, textarea {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+  input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  button {
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #666;
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <div><a href="#">Home</a><a href="#">Products</a></div>
+  <button>Contact Us</button>
+</div>
+<div class="content">
+  <h1>Explore Our Exclusive Sports Gears</h1>
+  <img src="sportsequipment.jpg" alt="Sports Equipment" class="product-image">
+  <p>Discover a wide range of high-quality sports equipment designed for ultimate performance and durability.</p>
+  <div class="form-section">
+    <h2>Get More Information</h2>
+    <form id="infoForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+  </div>
+</div>
+<div class="footer">
+  <p>&copy; 2023 Sportify Gear. All rights reserved.</p>
+</div>
+<script>
+  function submitForm() {
+    // Simple form submission simulation
+    alert("Thank you for your inquiry!");
+  }
+</script>
+</body>
+</html>
