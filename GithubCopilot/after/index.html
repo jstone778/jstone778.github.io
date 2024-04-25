@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sports Company</title>
+    <style>
+        body {
+            background: linear-gradient(to right, purple, blue);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .header button {
+            padding: 10px;
+            background-color: white;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px;
+        }
+        .content img {
+            width: 200px;
+            height: 200px;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+        form input {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Sports Company</h1>
+        <div>
+            <button onclick="navigate('home')">Home</button>
+            <button onclick="navigate('products')">Products</button>
+        </div>
+    </div>
+    <div class="content">
+        <img src="sports-equipment.jpg" alt="Sports Equipment">
+        <h2>Sports Equipment</h2>
+        <p>Our sports equipment is top of the line, offering the best performance for athletes of all levels.</p>
+        <form>
+            <h3>Contact Us</h3>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Name">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy; 2022 Sports Company</p>
+    </div>
+    <script>
+        function navigate(page) {
+            alert('Navigating to ' + page);
+        }
+    </script>
+</body>
+</html>
